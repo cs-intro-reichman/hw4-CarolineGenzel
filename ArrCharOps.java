@@ -163,18 +163,26 @@ public class ArrCharOps {
         if (str1 == null || str2 == null ) {
             return -2;
         }
-        if (str1.length() < str2.length()) {
-            return -1;  }   
-        if (str1.length() > str2.length()) {
-            return 1;  
-        }
+       
     for (int i = 0; i < minLength; i++) {
         char c1 = str1.charAt(i);
         char c2 = str2.charAt(i);
         if (c1 != c2) {
-            if (c1 > c2) {
-                return 1;
-            } else return -1;
+            if (length1 == length2 ) {
+                if (c1 > str2.charAt(length2-1)) {
+                    return 1;
+                } else return -1;
+            }
+            else {
+                if (c1 > c2) {
+                    return 1;
+                } else return -1;
+            }
+        }
+        if (str1.length() < str2.length()) {
+            return -1;  }   
+        if (str1.length() > str2.length()) {
+            return 1;  
         }
     }
     
