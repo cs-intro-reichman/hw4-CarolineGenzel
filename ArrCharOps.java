@@ -160,15 +160,9 @@ public class ArrCharOps {
         int length1 = str1.length();
         int length2 = str2.length();
         int minLength = Math.min(length1, length2);
-        if (str1 == null || str2 == null ) {
+        if (str1 == null || str2 == null || str1.isEmpty() ||str2.isEmpty() ) {
             return -2;
-        }
-        String LowerStr1=str1.toLowerCase();
-        String LowerStr2=str2.toLowerCase();
-      
-        if (LowerStr1!= str1 ||LowerStr2!=str2) {
-            return -2;
-        }
+        }  
         
     for (int i = 0; i < minLength; i++) {
         char c1 = str1.charAt(i);
@@ -184,9 +178,6 @@ public class ArrCharOps {
         if (str1.length() > str2.length()) {
             return 1;  
         }
-    
-    
-  
 
     return 0; 
 }
