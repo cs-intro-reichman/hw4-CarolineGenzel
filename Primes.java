@@ -2,17 +2,16 @@ public class Primes {
     public static void main(String[] args) {
         final int N=Integer.parseInt(args[0]);
         boolean [] checkArr= new boolean[N+1];
-        for(int i=0;i<=N;i++){
-            if(i==0 || i==1) {
-                checkArr[i]=false;
-            }
-            else checkArr[i]=true;
+        checkArr[0]=false;
+        checkArr[1]=false;
+        for(int i=2;i<=N;i++){
+           checkArr[i]=true;
         }
        
         int p=2;
         int count=0;
         while (p < Math.sqrt(N)) {
-            while (count<N) {
+            while (count<=N) {
                 if (checkArr[count] && p!=count && count%p==0) {
                     checkArr[count]=false;
                 }
@@ -22,12 +21,7 @@ public class Primes {
             count=p;
         }
     double numP=0.0;
-    System.out.println(" ");
-    System.out.println(" ");
-    System.out.println(" ");
-    System.out.println(" ");
-
-    for(int i=0;i<N;i++){
+    for(int i=2;i<=N;i++){
         if (checkArr[i]) {
             System.out.println(i);
             numP++;
