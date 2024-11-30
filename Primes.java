@@ -29,6 +29,6 @@ public class Primes {
         }
     }
     double odd= numP/N;
-    System.out.println("there are "+ (int)numP+ " primes between 2 and "+ N+" ("+(int)(odd*100)+"% are primes)");
+    System.out.print("there are "+ (int)numP+ " primes between 2 and "+ N+" ("+(int)(odd*100)+"% are primes)");
 
 }}
