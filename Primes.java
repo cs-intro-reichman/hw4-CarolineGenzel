@@ -1,3 +1,5 @@
+
+
 public class Primes {
     public static void main(String[] args) {
         final int N=Integer.parseInt(args[0]);
@@ -21,6 +23,7 @@ public class Primes {
             count=p;
         }
     double numP=0.0;
+    System.out.println("Primes numbers up to "+ N +":");
     for(int i=2;i<=N;i++){
         if (checkArr[i]) {
             System.out.println(i);
