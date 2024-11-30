@@ -23,7 +23,7 @@ public class Primes {
             count=p;
         }
     double numP=0.0;
-    System.out.println("Primes numbers up to "+ N +":");
+    System.out.println("Prime numbers up to "+ N +":");
     for(int i=2;i<=N;i++){
         if (checkArr[i]) {
             System.out.println(i);
