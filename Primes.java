@@ -3,11 +3,12 @@ public class Primes {
         final int N=Integer.parseInt(args[0]);
         boolean [] checkArr= new boolean[N+1];
         for(int i=0;i<=N;i++){
-            if (i==0 || i==1) {
+            if(i==0 || i==1) {
                 checkArr[i]=false;
             }
             else checkArr[i]=true;
         }
+       
         int p=2;
         int count=0;
         while (p < Math.sqrt(N)) {
@@ -21,6 +22,9 @@ public class Primes {
             count=p;
         }
     double numP=0.0;
+    System.out.println(" ");
+    System.out.println(" ");
+    System.out.println(" ");
     for(int i=0;i<N;i++){
         if (checkArr[i]) {
             System.out.println(i);
