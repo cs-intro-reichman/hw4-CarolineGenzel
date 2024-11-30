@@ -23,7 +23,10 @@ public class MyString {
 
     /** If str1 contains str2, returns true; otherwise returns false. */
     public static boolean contains(String str1, String str2) {
-        int j=0,i=0;  
+        int j=0,i=0;
+        if (str2.length() == 0) {
+            return true;
+        }  
         if (str1.length()<str2.length()) {
             return false;
         }
