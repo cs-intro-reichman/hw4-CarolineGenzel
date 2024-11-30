@@ -30,7 +30,7 @@ public class KeywordsDetector {
             String s1=sentences[i].toLowerCase(); 
             String s2=keywords[j].toLowerCase();
             if (s1.contains(s2)) {
-                newArr[i]=s1;
+                newArr[i]=sentences[i];
                 i++;
             }
             else i++;
