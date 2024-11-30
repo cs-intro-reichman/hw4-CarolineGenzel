@@ -23,11 +23,13 @@ public class Primes {
     double numP=0.0;
     for(int i=2;i<=N;i++){
         if (checkArr[i]) {
+            System.out.println(i);
             numP++;
 
         }
     }
-    double odd= numP/N;
-    System.out.println("there are "+ (int)numP+ " primes between 2 and "+ N+" ("+(int)(odd*100)+"% are primes)");
+    double odd= (numP/N)*100;
+    
+    System.out.println("there are "+ (int)numP+ " primes between 2 and "+ N+" ("+(int)odd+"% are primes)");
 
 }}
